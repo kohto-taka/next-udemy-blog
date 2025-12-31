@@ -40,7 +40,7 @@ export async function createUser(
 ): Promise<ActionState> {
   //フォームから渡ってきた情報を取得
   const rawFromData = Object.fromEntries(
-    ['name', 'email', 'password', 'confirmPassword'].map(filed => [
+    ['name', 'email', 'password', 'confirmPassword'].map((filed) => [
       filed,
       formData.get(filed) as string
     ])

@@ -2,7 +2,6 @@
 
 import { useActionState } from 'react';
 import { authenticate } from '@/lib/actions/authenticate';
-import { useSearchParams } from 'next/navigation';
 import {
   Card,
   CardContent,
